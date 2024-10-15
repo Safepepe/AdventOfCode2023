@@ -12,7 +12,6 @@ decodeLine  = joinEnds .filter isDigit
 
 answer :: IO Int
 answer = inputIO >>= return . foldr1 (+) . map decodeLine
-
 -- Part Two --
 
 one,two,three,four,five,six,seven,eight,nine :: Parser String
